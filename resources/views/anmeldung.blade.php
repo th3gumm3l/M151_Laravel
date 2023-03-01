@@ -11,19 +11,19 @@
     <h1>Anmeldung</h1>
     <form action="?" method="Post">
         <p>
-            E-Mail:
+            <label for="email">E-Mail:</label>
             <input type="email" name="email" id="email" placeholder="E-mail">
         </p>
         <p>
-            Name:
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Name">
         </p>
         <p>
-            Vorname:
+            <label for="vorname">Vorname:</label>
             <input type="text" name="vorname" id="vorname" placeholder="Vorname">
         </p>
         <p>
-            Bemerkungen:
+            <label for="bemerkungen">Bemerkungen:</label>
             <input type="text" name="bemerkungen" id="bemerkungen" placeholder="Bemerkungen">
         </p>
         <input type="submit" value="Anmelden">

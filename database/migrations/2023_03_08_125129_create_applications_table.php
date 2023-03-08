@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string(column: 'email');
-            $table->string(column: 'name');
-            $table->string(column: 'firstname');
-            $table->string(column: 'answer');
+            $table->string('email');
+            $table->string('lastname');
+            $table->string('firstname');
+            $table->string('answer');
         });
     }
 

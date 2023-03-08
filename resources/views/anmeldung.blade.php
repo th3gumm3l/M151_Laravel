@@ -9,21 +9,22 @@
 </head>
 <body>
     <h1>Anmeldung</h1>
-    <form action="?" method="Post">
+    <form method="Post">
+        @csrf
         <p>
             <label for="email">E-Mail:</label>
             <input type="email" name="email" id="email" placeholder="E-mail">
         </p>
         <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Name">
+            <label for="lastname">Last-Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="lastname">
         </p>
         <p>
-            <label for="firstname">Vorname:</label>
+            <label for="firstname">First-Name:</label>
             <input type="text" name="firstname" id="firstname" placeholder="firstname">
         </p>
         <p>
-            <label for="answer">Bemerkungen:</label>
+            <label for="answer">Answer:</label>
             <input type="text" name="answer" id="answer" placeholder="answer">
         </p>
         <input type="submit" value="Anmelden">

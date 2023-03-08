@@ -19,12 +19,12 @@
             <input type="text" name="name" id="name" placeholder="Name">
         </p>
         <p>
-            <label for="vorname">Vorname:</label>
-            <input type="text" name="vorname" id="vorname" placeholder="Vorname">
+            <label for="firstname">Vorname:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="firstname">
         </p>
         <p>
-            <label for="bemerkungen">Bemerkungen:</label>
-            <input type="text" name="bemerkungen" id="bemerkungen" placeholder="Bemerkungen">
+            <label for="answer">Bemerkungen:</label>
+            <input type="text" name="answer" id="answer" placeholder="answer">
         </p>
         <input type="submit" value="Anmelden">
     </form>

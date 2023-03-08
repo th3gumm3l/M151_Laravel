@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Application;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,29 @@ Route::get('/', function () {
 
 Route::get('/anmeldung', function () {
     return view('anmeldung');
+});
+
+Route::post('/anmeldung', function(){
+    $request = request();
+
+    $application = new Application();
+    $application->email = $request->get('email');
+    $application->firstname = $request->get('firstname');
+    $application->lastname = $request->get('lastname');
+    $application->answer = $request->get('answer');
+    $application->save();
+
+    return redirect('/anmeldung');
+});
+
+Route::get('/anmeldung/applications', function(){
+
+    $applications = Application::where('answer', 'yes');
+
+    $declinedApplications = Application::where('answer', 'no')->count();
+    dd($declinedApplications);
+
+    return view('applications',[
+        'applications'=> $applications]
+    );
 });

@@ -8,7 +8,15 @@
     <title>Sing Up</title>
 </head>
 <body>
-    <h1>Sing Up</h1>
+    <h1>Sing Up for this event</h1>
+
+    <h2>
+        {{$event -> title}}
+    </h2>
+    <p>
+        {{$event -> description}}
+    </p>
+
     <form method="Post">
         @csrf
         <div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Application;
 use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
@@ -16,14 +17,13 @@ class ApplicationController extends Controller
         $application->answer = $request->get('answer');
         $application->save();
 
-        return redirect('/anmeldung');
+        return redirect('/event');
     }
 
     public function  list(){
         $applications = Application::where('answer', 'yes');
 
         $declinedApplications = Application::where('answer', 'no')->count();
-        dd($declinedApplications);
 
         return view('applications',[
                 'applications'=> $applications]

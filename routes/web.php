@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('event');
 });
 
-Route::get('/anmeldung', [EventController::class, 'show']);
+Route::get('/event', [EventController::class, 'show']);
 
-Route::post('/anmeldung', [ApplicationController::class, 'create']);
+Route::post('/event', [ApplicationController::class, 'create']);
 
-Route::get('/anmeldung/applications', [ApplicationController::class, 'list']);
+Route::get('/event/applications', [ApplicationController::class, 'list']);

@@ -24,4 +24,4 @@ Route::get('/anmeldung', [EventController::class, 'show']);
 
 Route::post('/anmeldung', [ApplicationController::class, 'create']);
 
-Route::get('/anmeldung/applications', ApplicationController::class, 'list');
+Route::get('/anmeldung/applications', [ApplicationController::class, 'list']);

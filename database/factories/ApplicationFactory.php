@@ -17,11 +17,10 @@ class ApplicationFactory extends Factory
     public function definition(): array
     {
         return [
-            'answer' => $this->faker->randomElement(['yes', 'no']),
-            'first_name' => $this->faker->firstName,
-            'last_name' => $this->faker->lastName,
+            'firstname' => $this->faker->firstName,
+            'lastname' => $this->faker->lastName,
             'email' => $this->faker->email,
-            'session_id' => '',
+            'answer' => $this->faker->randomElement(['yes', 'no']),
             'event_id' => $this->faker->numberBetween(1, 50)
         ];
     }

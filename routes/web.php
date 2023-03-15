@@ -20,6 +20,6 @@ Route::get('/', [EventController::class, 'list']);
 
 Route::get('/event/{id}', [EventController::class, 'show']);
 
-Route::post('/event', [ApplicationController::class, 'create']);
+Route::post('/event/{id}', [ApplicationController::class, 'create']);
 
-Route::get('/event/applications', [ApplicationController::class, 'list']);
+Route::get('/event/{id}/applications', [ApplicationController::class, 'list']);

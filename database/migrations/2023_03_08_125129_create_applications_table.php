@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('email');
-            $table->string('lastname');
             $table->string('firstname');
+            $table->string('lastname');
+            $table->string('email');
             $table->string('answer');
+            $table->string('event_id');
         });
     }
 

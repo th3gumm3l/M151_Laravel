@@ -25,7 +25,7 @@
         </div>
         <div>
             <label for="answer">Answer:</label> <br>
-            <textarea type="text" name="answer" id="answer" placeholder="answer"></textarea>
+            <input type="text" name="answer" id="answer" placeholder="answer">
         </div>
         <input type="submit" value="Sing Up">
     </form>

@@ -22,11 +22,12 @@ class ApplicationController extends Controller
 
     public function  list(){
         $applications = Application::where('answer', 'yes');
-
         $declinedApplications = Application::where('answer', 'no')->count();
 
         return view('applications',[
-                'applications'=> $applications]
+                'applications'=> $applications,
+                'declinedApplications' => $declinedApplications,
+            ]
         );
     }
 

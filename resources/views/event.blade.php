@@ -25,7 +25,7 @@
         Date: {{$event -> date}}
     </p>
 
-    <form action="TODO" method="Post">
+    <form action="?" method="Post">
         @csrf
         <div>
             <label for="email">E-Mail:</label>

@@ -18,6 +18,6 @@
         @endforeach
     </ul>
 
-    <small>Anzahl der Personen die nicht kommen: {{$declinedapplications}}</small>
+    <small>Anzahl der Personen die nicht kommen: {{$declinedApplications}}</small>
 </body>
 </html>

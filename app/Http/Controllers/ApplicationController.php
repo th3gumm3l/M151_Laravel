@@ -29,8 +29,9 @@ class ApplicationController extends Controller
     }
 
     public function  list($id){
-        $applications = Application::where('event_id', $id)->where('answer', 'yes')->get();
-        $declinedApplications = Application::where('event_id', $id)->where('answer', 'no')->count();
+        $event = Event::findOrFail($id);
+        $applications = $event->applications->where('answer', 'yes');
+        $declinedApplications = $event->applications->where('answer', 'no')->count();
 
         return view('applications', [
                 'event_id' => $id,

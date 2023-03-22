@@ -8,12 +8,10 @@
 
     <link rel="stylesheet" href="{{ asset('css/event.css') }}">
 
-    <title>Sing Up</title>
+    <title>Sign Up</title>
 </head>
 <body>
-    <a href="/"> <- Go Back </a>
-
-    <h1>Sing Up for this event</h1>
+    <h1>Sign Up for this event</h1>
 
     <h2>
         Title: {{$event -> title}}
@@ -55,7 +53,8 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <input type="submit" value="Sing Up">
+        <input type="submit" value="Sign Up">
+        <a href="/"> Cancel </a>
     </form>
 </body>
 </html>

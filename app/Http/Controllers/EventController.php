@@ -16,7 +16,7 @@ class EventController extends Controller
     }
 
     public function list(){
-        $events = Event::all();
+        $events = Event::with('applications')->get();
         return view('events', [
             'events' => $events
         ]);

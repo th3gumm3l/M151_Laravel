@@ -17,7 +17,10 @@
             <li>{{ $application -> firstname }} {{ $application -> lastname }}</li>
         @endforeach
     </ul>
+    <div>
+        <small>Anzahl der Personen die nicht kommen: {{$declinedApplications}}</small>
+        <a href="/"> Cancel </a>
+    </div>
 
-    <small>Anzahl der Personen die nicht kommen: {{$declinedApplications}}</small>
 </body>
 </html>
